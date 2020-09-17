@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-paper-scissors/static/css/main.9afd4e8a.chunk.css",
+    "main.js": "/react-paper-scissors/static/js/main.cf2f6090.chunk.js",
+    "main.js.map": "/react-paper-scissors/static/js/main.cf2f6090.chunk.js.map",
+    "runtime-main.js": "/react-paper-scissors/static/js/runtime-main.9d4cf437.js",
+    "runtime-main.js.map": "/react-paper-scissors/static/js/runtime-main.9d4cf437.js.map",
+    "static/js/2.a2c56392.chunk.js": "/react-paper-scissors/static/js/2.a2c56392.chunk.js",
+    "static/js/2.a2c56392.chunk.js.map": "/react-paper-scissors/static/js/2.a2c56392.chunk.js.map",
+    "index.html": "/react-paper-scissors/index.html",
+    "precache-manifest.0b3517b204b953ae60905337a32b6465.js": "/react-paper-scissors/precache-manifest.0b3517b204b953ae60905337a32b6465.js",
+    "service-worker.js": "/react-paper-scissors/service-worker.js",
+    "static/css/main.9afd4e8a.chunk.css.map": "/react-paper-scissors/static/css/main.9afd4e8a.chunk.css.map",
+    "static/js/2.a2c56392.chunk.js.LICENSE.txt": "/react-paper-scissors/static/js/2.a2c56392.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d4cf437.js",
+    "static/js/2.a2c56392.chunk.js",
+    "static/css/main.9afd4e8a.chunk.css",
+    "static/js/main.cf2f6090.chunk.js"
+  ]
+}

@@ -1,13 +1,196 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  height: 100vh;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#status {
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+@keyframes rainbow {
+  12.5% {
+    color: #FF0000;
+  }
+  25% {
+    color: #FFA500;
+  }
+  37.5% {
+    color: #FFFF00;
+  }
+  50% {
+    color: #7FFF00;
+  }
+  62.5% {
+    color: #00FFFF;
+  }
+  75% {
+    color: #0000FF;
+  }
+  87.5% {
+    color: #9932CC;
+  }
+  100% {
+    color: #FF1493;
+  }
+}
+
+#draw {
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  animation: heartbeat 1s infinite;
+  animation: rainbow 3s infinite linear;
+}
+
+#winner {
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  animation: heartbeat 1s infinite;
+  animation: rainbow 3s infinite linear;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 90px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 90px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.history {
+  background: #fff;
+  border: 1px solid #999;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  margin: 10px;
+}
+
+.history:hover {
+  background: grey;
+  color: white;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33%;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33%;
+}
+
+#game-title {
+  position: absolute;
+  top: 100px;
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
+#player-controls {
+  position: absolute;
+  bottom: 300px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+input {
+  margin: 30px;
+}
+
+.player {
+  font-size: 1.25rem;
+  margin: 50px;
 }
